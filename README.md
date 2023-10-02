@@ -1,4 +1,4 @@
-hello :)
+Capstone 2023-2024
 
 <!--
 **jessicaktran/jessicaktran** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
