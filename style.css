@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: georgia, serif;
+    line-height: 1.5;}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Project</title>
-    <script src="/script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"\>
 <body>
     <div class="container">
@@ -37,35 +36,43 @@
      
           <div class="row row-cols-2 bg-white">
            <div class="col border border-primary"> 
-           <p><h3 class="text-primary">Meet the CEO of Books4Kids:<p></p><h3 class="text-info">
-            Jessica Tran (she/her)</h3><br><br></h3>
+            <br><br>
+            <h3 id="titleHeading" onclick="changeText()">Meet the CEO of Books4Kids:</h3>
+            Click the title above to see what happens!<br>
+            <h3 class="text-info">Jessica Tran (she/her)</h3>
+            <br>
            <img src="https://i.pinimg.com/736x/f2/e6/65/f2e665a6282d6803c64c44fe0ba13110.jpg" alt="pictureofme" style="height:280px"><p></p>
            </div>
          
            <div class="col border border-primary">
            <p></p><br><br>
-           <img src="https://as1.ftcdn.net/v2/jpg/02/18/80/12/1000_F_218801212_v7GupWkYjj76cGafZajehRLegPxJ9Qsu.jpg" alt="cutekids" style="height:250px">
-           <!-- add this image for onclick on js: "https://st4.depositphotos.com/3450711/19860/i/450/depositphotos_198605974-stock-photo-group-portrait-two-white-caucasian.jpg" -->
-           <p></p><h6 class="text-danger">Click the picture above to see what happens!</h6>
+           <img src= "https://as1.ftcdn.net/v2/jpg/02/18/80/12/1000_F_218801212_v7GupWkYjj76cGafZajehRLegPxJ9Qsu.jpg" alt="cutekids" style="height:250px" onmouseover="countHover()" onmouseout="resetHoverCount()">
+           <p id="hoverCount">Kids Happy: 0</p>
+           <p></p><h6 class="text-danger">Hover over the image above! Every number is <p></p> how many kids you've made happy today!</h6>
            <p><h6>Jessica graduated from Oakland Technical High School. She has been interested in this topic as of this year, 2023, when she got to read to kids of low-income families.<p></p> She loves working with kids and would like to help in learning how to gain more access to literacy for children.</h3></p>
           </div>
          
            <div class="col border border-primary">
            <p><h4 class="text-success fw-bold">3 Fun Facts About Jessica</h4><br>
+           <img src="https://i.pinimg.com/originals/4c/a1/66/4ca1660c65914c64cd805ee989cb4c74.jpg" style="height:300px"><br><br>
            <ul>
                <li>Jessica has been in a reading slump for 3 months, but she has read a total of 45 books this year, as of 2023</li>
                <li>Jessica has a huge fear of <em>all</em> animals</li>
-               <li>Jessica's least favorite food is mashed potatoes</li>
+               <li>Jessica's least favorite food are mashed potatoes</li>
            </ul></h4></p>
            </div>
          
           <div class="col border border-primary">
-           <p><h3 class="text-primary fw-bold"></h3></p>
+           <p><h3 class="text-primary fw-bold"></h3></p><br><br><br>
+            Hover over me!<br>
+           <img  id="hoverImage" src="https://media1.popsugar-assets.com/files/thumbor/EfLe5N2fcUUggq5Dj70GM7kzQis=/fit-in/610x525/top/filters:format_auto():upscale()/2013/01/05/1/192/1922664/1f9e403e5c93d467_Corduroy.jpg" style="height:300px" onmouseover="changeImage(true)" onmouseout="changeImage(false)">
+           <br><br><br><br>
           </div>
        </div>
      </div>
     </div>
- 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+     <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css"/>
+    </body>
 </html> 
